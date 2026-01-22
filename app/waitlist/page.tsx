@@ -3,8 +3,7 @@ import { Input } from "@/components/input"
 import { Button } from "@/components/Button"
 import { Send } from "@/components/assets/Send"
 import { Logo } from "@/components/assets/logo"
-import { motion } from "motion/react"
-
+import { TypingEffect } from "@/components/textAnimation"
 export default function Page() {
     return (
         // PARENT: Relative container that holds everything
@@ -27,7 +26,9 @@ export default function Page() {
                         {/* Header Text */}
                         <div className="flex flex-col gap-2 text-center max-w-lg w-95.5">
                             <h1 className={`font-main font-bold text-[20px] tracking-[-0.06em] text-slate-900`}>
-                                Digital products,designed and built with intent.
+
+                                <TypingEffect text={"Digital products,designed and built with intent."} />
+
                             </h1>
                             <p className="text-[14px] font-main tracking-[-0.05em] text-[#2F2F2F]">
                                 Launch with <span className="font-medium">Clarity and Confidence</span>.
