@@ -9,13 +9,13 @@ type ButtonProp = {
 
 
 const variants = {  
-        primary : `bg-[#0D00FF] text-white` , 
-        long : `bg-[#0D00FF] w-[512px] h-[52px] text-white` , 
-        secondary : `bg-[#E6E6E6] outline-1 outline-black text-black`, 
+        primary : `bg-[#0D00FF] px-4 py-2 text-white` , 
+        long : `bg-[#0D00FF]  px-44 py-3 text-white` , 
+        secondary : `bg-[#E6E6E6] px-4 py-2 outline-1 outline-black text-black`, 
 }
 const textVariants = {  
         primary : `text-white text-[16px] ` , 
-        long : ` text-white text-[20px]` , 
+        long : ` text-white text-[16px]` , 
         secondary : `text-[#262626] text-[16px]`, 
 }
 
@@ -23,7 +23,7 @@ const textVariants = {
 
 export function Button({text,variant,icon} :ButtonProp){ 
     return ( 
-        <div className={`flex gap-3 items-center justify-center px-4 py-2 rounded-[3px] ${variant? variants[variant] : variants["primary"]}`}  >
+        <div className={`flex gap-3 font-main items-center justify-center  rounded-[3px] ${variant? variants[variant] : variants["primary"]}`}  >
             {icon}
             <p className={`${variant? textVariants[variant] : textVariants["primary"] }`}>
                 {text}

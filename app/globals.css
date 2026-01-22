@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
 
+/* @apply font-satoshi; */
+@theme inline {
+  --font-main : var(--font-satoshi);
+}
 
-body {
+
+@layer base {
+  body {
   background: #F6F4F3 ; 
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-main);
+  
 }
+} 

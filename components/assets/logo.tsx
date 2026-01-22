@@ -10,7 +10,7 @@ export function Logo() {
       <Image
         src={buildLogo}
         alt="Logo"
-        width={154}
+        width={100}
       />
     </div>
   );
